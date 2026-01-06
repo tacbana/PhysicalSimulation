@@ -1,0 +1,13 @@
+[project]
+name = "physicalsimulation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "pyopengl>=3.1.10",
+    "pyqtgraph>=0.14.0",
+    "pyside6>=6.10.1",
+    "scipy>=1.16.3",
+]

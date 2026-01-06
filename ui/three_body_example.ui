@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Frame</class>
+    <widget class="QFrame" name="three_body_example">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>300</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Frame</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+            <item row="2" column="0">
+                <widget class="QRadioButton" name="radioButton_2">
+                    <property name="text">
+                        <string>双恒星单行星</string>
+                    </property>
+                </widget>
+            </item>
+            <item row="2" column="1">
+                <widget class="QRadioButton" name="radioButton_5">
+                    <property name="text">
+                        <string>行进的螺旋线</string>
+                    </property>
+                </widget>
+            </item>
+            <item row="3" column="0">
+                <widget class="QRadioButton" name="radioButton_3">
+                    <property name="text">
+                        <string>等边三角形</string>
+                    </property>
+                </widget>
+            </item>
+            <item row="3" column="1">
+                <widget class="QRadioButton" name="radioButton_6">
+                    <property name="text">
+                        <string>自定义</string>
+                    </property>
+                </widget>
+            </item>
+            <item row="0" column="0">
+                <widget class="QRadioButton" name="radioButton_1">
+                    <property name="text">
+                        <string>单恒星双行星</string>
+                    </property>
+                </widget>
+            </item>
+            <item row="0" column="1">
+                <widget class="QRadioButton" name="radioButton_4">
+                    <property name="text">
+                        <string>8字运动特解</string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <tabstops>
+        <tabstop>radioButton_1</tabstop>
+        <tabstop>radioButton_2</tabstop>
+        <tabstop>radioButton_3</tabstop>
+        <tabstop>radioButton_4</tabstop>
+        <tabstop>radioButton_5</tabstop>
+        <tabstop>radioButton_6</tabstop>
+    </tabstops>
+    <resources/>
+    <connections/>
+</ui>

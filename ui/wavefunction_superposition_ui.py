@@ -1,0 +1,22 @@
+import numpy as np
+
+
+class WaveFunction:
+    def __init__(self, a=1, miu=9.10938356e-31, h=6.62607015e-34):
+        self.a = a
+        self.miu = miu
+        self.h = h
+        self.hbar = h / (2 * np.pi)
+        self.main_quantum_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.coefficient = [1] + [0] * 9  # 默认第一能级为1，其余为0
+
+    def psi(self, n, x, t):
+        En = n**2 * self.h**2 / (8 * self.miu * self.a**2)
+        return np.sqrt(2 / self.a) * np.sin(n * np.pi * x / self.a) * np.exp(-1j * En * t / self.hbar)
+
+    def desirable_psi(self, x, t):
+        wave_ideal = np.zeros_like(x, dtype=complex)
+        for n, c in zip(self.main_quantum_number, self.coefficient):
+            wave_ideal += c * self.psi(n, x, t)
+        norm = np.sqrt(np.trapezoid(np.abs(wave_ideal) ** 2, x))
+        return wave_ideal / norm if norm != 0 else wave_ideal
