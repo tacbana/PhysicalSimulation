@@ -2,7 +2,7 @@
 
 ## 使用的工具
 
-项目采用Python语言开发，UI使用Pyside，包管理和项目管理使用的工具是uv（An extremely fast Python package and project manager, written in Rust，<https://docs.astral.sh/uv>）
+项目采用Python语言（<https://www.python.org/>）开发，UI使用PySide6（<https://pypi.org/project/PySide6/>），包管理和项目管理使用的工具是uv（An extremely fast Python package and project manager, written in Rust，<https://docs.astral.sh/uv>）
 
 ## 文件目录结构
 
